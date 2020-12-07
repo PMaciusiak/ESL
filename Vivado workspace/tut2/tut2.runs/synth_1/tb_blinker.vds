@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Dec  5 18:29:10 2020
+# Process ID: 13600
+# Current directory: Z:/ESL projects/tut2/tut2.runs/synth_1
+# Command line: vivado.exe -log tb_blinker.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_blinker.tcl
+# Log file: Z:/ESL projects/tut2/tut2.runs/synth_1/tb_blinker.vds
+# Journal file: Z:/ESL projects/tut2/tut2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tb_blinker.tcl -notrace
+Command: synth_design -top tb_blinker -part xc7z010iclg225-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 49384
+ERROR: [Synth 8-1031] None is not declared [C:/Users/Pawe³ Maciusiak/Documents/GitHub/ESL/tut2/blinker.v:163]
+INFO: [Synth 8-2350] module blinker ignored due to previous errors [C:/Users/Pawe³ Maciusiak/Documents/GitHub/ESL/tut2/blinker.v:8]
+Failed to read verilog 'C:/Users/Pawe³ Maciusiak/Documents/GitHub/ESL/tut2/blinker.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+6 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  5 18:29:52 2020...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Dec  7 16:47:56 2020
+# Process ID: 7268
+# Current directory: Z:/ESL projects/project_8/project_8.runs/synth_1
+# Command line: vivado.exe -log simpler_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source simpler_ram.tcl
+# Log file: Z:/ESL projects/project_8/project_8.runs/synth_1/simpler_ram.vds
+# Journal file: Z:/ESL projects/project_8/project_8.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source simpler_ram.tcl -notrace

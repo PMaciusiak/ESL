@@ -1,0 +1,8 @@
+set_property IOSTANDARD LVCMOS33 [get_ports {leds_o[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds_o[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds_o[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {leds_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports clk_i]
+set_property IOSTANDARD LVCMOS33 [get_ports button_a]
+set_property IOSTANDARD LVCMOS33 [get_ports button_b]

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Pawe³ Maciusiak/Documents/GitHub/ESL/tut2/blinker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blinker
+ERROR: [VRFC 10-2989] 'None' is not declared [C:/Users/Pawe³ Maciusiak/Documents/GitHub/ESL/tut2/blinker.v:163]
+ERROR: [VRFC 10-2865] module 'blinker' ignored due to previous errors [C:/Users/Pawe³ Maciusiak/Documents/GitHub/ESL/tut2/blinker.v:8]

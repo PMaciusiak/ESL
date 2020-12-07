@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Dec  7 17:05:26 2020
+# Process ID: 14136
+# Current directory: Z:/ESL projects/project_9/project_9.runs/impl_1
+# Command line: vivado.exe -log classic_fsm.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source classic_fsm.tcl -notrace
+# Log file: Z:/ESL projects/project_9/project_9.runs/impl_1/classic_fsm.vdi
+# Journal file: Z:/ESL projects/project_9/project_9.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source classic_fsm.tcl -notrace

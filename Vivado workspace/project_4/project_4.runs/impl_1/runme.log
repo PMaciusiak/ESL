@@ -1,0 +1,196 @@
+
+*** Running vivado
+    with args -log pwm_less_simple.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source pwm_less_simple.tcl -notrace
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source pwm_less_simple.tcl -notrace
+Command: link_design -top pwm_less_simple -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 997.984 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [Z:/ESL projects/project_4/project_4.srcs/constrs_3/new/asdasdasda.xdc]
+Finished Parsing XDC File [Z:/ESL projects/project_4/project_4.srcs/constrs_3/new/asdasdasda.xdc]
+[libprotobuf ERROR C:\w10\HEAD\src\ext\protobuf\build\lnx64\protobuf-3.7.1\src\google\protobuf\wire_format_lite.cc:611] String field 'HDMetricDBGroup.MetricMapEntry.value' contains invalid UTF-8 data when parsing a protocol buffer. Use the 'bytes' type if you intend to send raw bytes. 
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 997.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 997.984 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 997.984 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 109ed20ae
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1242.824 ; gain = 244.840
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 109ed20ae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1448.949 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 109ed20ae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 1448.949 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: d7475961
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.202 . Memory (MB): peak = 1448.949 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: d7475961
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.228 . Memory (MB): peak = 1448.949 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: d7475961
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.231 . Memory (MB): peak = 1448.949 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: d7475961
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.265 . Memory (MB): peak = 1448.949 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1448.949 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1562151f1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.269 . Memory (MB): peak = 1448.949 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1562151f1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.185 . Memory (MB): peak = 1448.949 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1562151f1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1448.949 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1448.949 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1562151f1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1448.949 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1448.949 ; gain = 450.965
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1448.949 ; gain = 0.000
+[libprotobuf ERROR C:\w10\HEAD\src\ext\protobuf\build\lnx64\protobuf-3.7.1\src\google\protobuf\wire_format_lite.cc:611] String field 'HDMetricDBGroup.MetricMapEntry.value' contains invalid UTF-8 data when serializing a protocol buffer. Use the 'bytes' type if you intend to send raw bytes. 
+INFO: [Common 17-1381] The checkpoint 'Z:/ESL projects/project_4/project_4.runs/impl_1/pwm_less_simple_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file pwm_less_simple_drc_opted.rpt -pb pwm_less_simple_drc_opted.pb -rpx pwm_less_simple_drc_opted.rpx
+Command: report_drc -file pwm_less_simple_drc_opted.rpt -pb pwm_less_simple_drc_opted.pb -rpx pwm_less_simple_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'Z:/xilling/Vivado/2020.2/data/ip'.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file Z:/ESL projects/project_4/project_4.runs/impl_1/pwm_less_simple_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1495.957 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b19e60eb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1495.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1495.957 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-876] Port 'clk_i'  is assigned to PACKAGE_PIN 'AA6'  which can only be used as the N side of a differential clock input. 
+Please use the following constraint(s) to pass this DRC check:
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {clk_i_IBUF}]
+Resolution: Please use the xdc constraints above.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 13c606c60
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.731 . Memory (MB): peak = 1495.957 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 13c606c60
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.731 . Memory (MB): peak = 1495.957 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'Implementation Feasibility check failed, Please see the previously displayed individual error or warning messages for more details.'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 13c606c60
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.732 . Memory (MB): peak = 1495.957 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  5 20:20:47 2020...
